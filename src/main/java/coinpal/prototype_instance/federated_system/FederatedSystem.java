@@ -1,7 +1,8 @@
-package coinpal.prototype_instance;
+package coinpal.prototype_instance.federated_system;
 
 /**
- * Hello world!
+ * This class represents the actual System, not the server or the instruments
+ * that otherwise act on it.
  *
  */
 public class FederatedSystem {

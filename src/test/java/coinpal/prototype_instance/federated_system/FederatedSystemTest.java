@@ -1,5 +1,6 @@
-package coinpal.prototype_instance;
+package coinpal.prototype_instance.federated_system;
 
+import coinpal.prototype_instance.federated_system.FederatedSystem;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
