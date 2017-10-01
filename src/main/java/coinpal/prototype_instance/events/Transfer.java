@@ -40,8 +40,8 @@ public class Transfer implements Request {
 	}
 
 	@Override
-	public void visit(FederatedSystem f) {
-
+	public Response visit(FederatedSystem f) {
+		return null;
 	}
 
 	@Override

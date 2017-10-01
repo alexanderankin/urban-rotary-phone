@@ -1,21 +1,27 @@
 package coinpal.prototype_instance.events;
 
+import java.math.BigInteger;
+
 import coinpal.prototype_instance.federated_system.FederatedSystem;
+import coinpal.prototype_instance.structures.ID;
 
 public class Balance implements Request {
 	private final int id;
+	private final ID from;
 
 	public Balance() {
 		throw new UnsupportedOperationException();
 	}
 
-	public Balance(int id) {
+	public Balance(ID f, int id) {
+		from = f;
 		this.id = id;
 	}
 
 	@Override
-	public void visit(FederatedSystem f) {
-
+	public Response visit(FederatedSystem f) {
+		BigInteger balance = f.getBalance(from);
+		return null;
 	}
 
 	@Override

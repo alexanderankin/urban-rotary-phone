@@ -36,6 +36,7 @@ public class Listener implements Runnable {
 
 			logger.log(Level.INFO, "Processing Request " + next.toString());
 			next.visit(system);
+//			Response r = next.
 		}
 	}
 }

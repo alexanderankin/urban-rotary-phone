@@ -2,7 +2,7 @@ package coinpal.prototype_instance.federated_system;
 
 import java.math.BigInteger;
 
-import coinpal.prototype_instance.structures.Address;
+import coinpal.prototype_instance.structures.ID;
 import coinpal.prototype_instance.structures.Table;
 
 /**
@@ -23,7 +23,7 @@ public class FederatedSystem {
 		table = new Table();
 	}
 
-	public BigInteger getBalance(Address from) {
+	public BigInteger getBalance(ID from) {
 		BigInteger result = table.get(from);
 		return null;
 	}
