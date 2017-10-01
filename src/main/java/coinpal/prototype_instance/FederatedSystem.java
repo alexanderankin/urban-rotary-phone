@@ -4,7 +4,7 @@ package coinpal.prototype_instance;
  * Hello world!
  *
  */
-public class App {
+public class FederatedSystem {
 	public static void main(String[] args) {
 		System.out.println("Hello World!");
 	}
