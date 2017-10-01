@@ -7,26 +7,30 @@ import coinpal.prototype_instance.structures.ID;
 public class Transfer implements Request {
 	private final Address from;
 	private final Address to;
-	
+	private final int id;
+
 	public Transfer() {
 		throw new UnsupportedOperationException();
 	}
-	
-	public Transfer(Address f, Address t) {
+
+	public Transfer(Address f, Address t, int requestId) {
 		from = f;
 		to = t;
+		id = requestId;
 	}
-	
-	public Transfer(ID f, ID t) {
+
+	public Transfer(ID f, ID t, int requestId) {
 		from = f.getAddress();
 		to = t.getAddress();
+		id = requestId;
 	}
-	
-	public Transfer(ID f, Address t) {
+
+	public Transfer(ID f, Address t, int requestId) {
 		from = f.getAddress();
 		to = t;
+		id = requestId;
 	}
-	
+
 	public Address getFrom() {
 		return from;
 	}
@@ -37,6 +41,11 @@ public class Transfer implements Request {
 
 	@Override
 	public void visit(FederatedSystem f) {
-		
+
+	}
+
+	@Override
+	public int getId() {
+		return id;
 	}
 }

@@ -14,15 +14,15 @@ import coinpal.prototype_instance.structures.Table;
 public class FederatedSystem {
 
 	private final Table table;
-	
+
 	public boolean isAwesome() {
 		return true;
 	}
-	
+
 	public FederatedSystem() {
 		table = new Table();
 	}
-	
+
 	public BigInteger getBalance(Address from) {
 		BigInteger result = table.get(from);
 		return null;
