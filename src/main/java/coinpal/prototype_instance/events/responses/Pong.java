@@ -13,9 +13,9 @@ public class Pong extends Success {
 		id = responseId;
 	}
 
-	public Pong(boolean o, int responseId) {
+	public Pong(boolean o, int requestId) {
 		ok = o;
-		id = responseId;
+		id = requestId;
 	}
 
 	@Override
