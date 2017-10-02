@@ -1,5 +1,7 @@
-package coinpal.prototype_instance.events;
+package coinpal.prototype_instance.events.requests;
 
+import coinpal.prototype_instance.events.responses.Pong;
+import coinpal.prototype_instance.events.responses.Response;
 import coinpal.prototype_instance.federated_system.FederatedSystem;
 
 public class Ping implements Request {
@@ -15,7 +17,7 @@ public class Ping implements Request {
 
 	@Override
 	public Response visit(FederatedSystem f) {
-		return null;
+		return new Pong(id);
 	}
 
 	@Override

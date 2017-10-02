@@ -1,5 +1,7 @@
-package coinpal.prototype_instance.events;
+package coinpal.prototype_instance.events.requests;
 
+import coinpal.prototype_instance.events.Event;
+import coinpal.prototype_instance.events.responses.Response;
 import coinpal.prototype_instance.federated_system.FederatedSystem;
 
 public interface Request extends Event {

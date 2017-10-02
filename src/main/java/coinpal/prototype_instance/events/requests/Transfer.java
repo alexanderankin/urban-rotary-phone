@@ -1,5 +1,6 @@
-package coinpal.prototype_instance.events;
+package coinpal.prototype_instance.events.requests;
 
+import coinpal.prototype_instance.events.responses.Response;
 import coinpal.prototype_instance.federated_system.FederatedSystem;
 import coinpal.prototype_instance.structures.Address;
 import coinpal.prototype_instance.structures.ID;
